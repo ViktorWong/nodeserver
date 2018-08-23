@@ -1,0 +1,35 @@
+{
+    "name": "nodeserver",
+    "version": "1.0.0",
+    "description": "tiny nodejs static web server",
+    "main": ".eslintrc.js",
+    "dependencies": {},
+    "devDependencies": {
+        "babel-eslint": "^8.2.6",
+        "eslint": "^5.4.0",
+        "eslint-plugin-html": "^4.0.5",
+        "pre-commit": "^1.2.2"
+    },
+    "scripts": {
+        "test": "mocha",
+        "lint": "eslint .",
+        "fix": "eslint --fix ."
+    },
+    "pre-commit": [
+        "fix",
+        "lint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ViktorWong/nodeserver.git"
+    },
+    "keywords": [
+        "nodeserver"
+    ],
+    "author": "victor318x@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ViktorWong/nodeserver/issues"
+    },
+    "homepage": "https://github.com/ViktorWong/nodeserver#readme"
+}
