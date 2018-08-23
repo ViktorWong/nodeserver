@@ -14,6 +14,3 @@ console.log('1');
 /* eslint-enable semi */
 console.log('s')
 
-
-/* eslint-enable */
-console.log('s')
