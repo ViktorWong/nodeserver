@@ -1,10 +1,10 @@
 {
-    "name": "nodeserver",
+    "name": "vnodeserver",
     "version": "0.1.0",
     "description": "tiny nodejs static web server",
     "main": "src/app.js",
     "bin": {
-        "nodeserver":"bin/nodeserver"
+        "nodeserver":"bin/vnodeserver"
     },
     "dependencies": {
         "chalk": "^2.4.1",
@@ -31,7 +31,7 @@
         "url": "git+https://github.com/ViktorWong/nodeserver.git"
     },
     "keywords": [
-        "nodeserver"
+        "viktor-nodeserver"
     ],
     "author": "victor318x@gmail.com",
     "license": "ISC",
