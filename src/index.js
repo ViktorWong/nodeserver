@@ -1,16 +1,27 @@
-console.log(1) /* eslint-disable-line */
+const yargs = require('yargs') // 使用-p 和 --port 一致
+const Server = require('./app')
 
-/* eslint-disable no-console,semi  */
-console.warn(2);
-console.log(1)
+const argv = yargs
+  .usage('anywhere [options]')
+  .option('p', {
+    alias: 'port',
+    describe: '端口号',
+    default: 9527
+  })
+  .option('h', {
+    alias: 'hostname',
+    describe: 'host',
+    default: '127.0.0.1'
+  })
+  .option('d', {
+    alias: 'root',
+    describe: 'root path',
+    default: process.cwd()
+  })
+  .version()
+  .alias('v', 'version')
+  .help()
+  .argv
 
-
-
-console.log(1)   // eslint-disable-line
-console.log(1)  // eslint-disable-next-line
-// eslint-disable-next-line
-console.log('1');
-
-/* eslint-enable semi */
-console.log('s')
-
+const server = new Server(argv)
+server.start()
